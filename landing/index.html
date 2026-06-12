@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContentAI Bot - Генератор продающего контента</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+        .features {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .features h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2rem;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .feature-card {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+        .pricing {
+            background: #f8f9fa;
+            padding: 80px 20px;
+        }
+        .pricing h2 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .pricing-card {
+            background: white;
+            border-radius: 10px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .pricing-card h3 {
+            margin-bottom: 20px;
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        .cta {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>ContentAI Bot</h1>
+        <p>Генерируйте продающие посты для российского рынка за 30 секунд</p>
+        <a href="https://t.me/ContentAI_bot" class="btn">Запустить бота</a>
+    </section>
+
+    <section class="features">
+        <h2>Почему ContentAI Bot?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🇷🇺 Специализация на Рунете</h3>
+                <p>Контент, адаптированный под менталитет российской аудитории</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ Быстро и просто</h3>
+                <p>Готовый пост за 30 секунд прямо в Telegram</p>
+            </div>
+            <div class="feature-card">
+                <h3>📝 5 шаблонов</h3>
+                <p>Посты, описания, рекламные тексты, заголовки</p>
+            </div>
+            <div class="feature-card">
+                <h3>💰 Доступные цены</h3>
+                <p>От 299 ₽/мес для профессионального контента</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎨 Настройка тона</h3>
+                <p>Формальный, неформальный, дружеский или экспертный</p>
+            </div>
+            <div class="feature-card">
+                <h3>📊 Статистика</h3>
+                <p>Отслеживайте свои генерации и экономию времени</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2>Тарифы</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Free</h3>
+                <div class="price">0 ₽</div>
+                <p>3 генерации/день</p>
+                <p>Базовые шаблоны</p>
+            </div>
+            <div class="pricing-card">
+                <h3>Старт</h3>
+                <div class="price">299 ₽/мес</div>
+                <p>30 генераций/день</p>
+                <p>Все шаблоны</p>
+                <p>История генераций</p>
+            </div>
+            <div class="pricing-card">
+                <h3>Бизнес</h3>
+                <div class="price">599 ₽/мес</div>
+                <p>Безлимит</p>
+                <p>Все функции</p>
+                <p>Экспорт в PDF</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Начните создавать продающий контент сейчас!</h2>
+        <br>
+        <a href="https://t.me/ContentAI_bot" class="btn">Запустить бота</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ContentAI Bot. Все права защищены.</p>
+    </footer>
+</body>
+</html>

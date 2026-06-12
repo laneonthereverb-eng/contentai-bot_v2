@@ -1,0 +1,22 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite+aiosqlite:///data.db")
+REDIS_URL = os.getenv("REDIS_URL")
+SENTRY_DSN = os.getenv("SENTRY_DSN")
+YOOKASSA_SHOP_ID = os.getenv("YOOKASSA_SHOP_ID")
+YOOKASSA_SECRET_KEY = os.getenv("YOOKASSA_SECRET_KEY")
+
+FREE_TIER_LIMIT = 3
+START_TIER_LIMIT = 30
+BUSINESS_TIER_LIMIT = -1
+
+START_TIER_PRICE = 299
+BUSINESS_TIER_PRICE = 599
+AGENCY_TIER_PRICE = 1499
+
+YEARLY_DISCOUNT = 0.8
